@@ -1,0 +1,89 @@
+/* .section-two {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f8f9fa;
+}
+.sectionTwo-content{
+display: flex;
+}
+
+.section-icon {
+  background-color: #ff6b00;
+  width: 50%;
+  height: 100%;
+}
+
+.section-p {
+  background-color: aqua;
+  width: 50%;
+  height: 100%;
+}
+
+.limited-width{
+  max-width:600px;
+  margin: 0 auto;
+}
+
+ */
+
+ .section-two {
+  background-color: #f8f9fa;
+}
+
+.sectionTwo-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.orange-mainbackground{
+  position: relative;
+  width: 40%;
+    height: 435px;
+}
+
+.orange-background {
+  width: 100%;
+    height: 360px;
+    background-color: #ff6b00;
+    border-radius: 100px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.image{
+    object-fit: contain;
+    width: 100%;
+    height: 430px;
+    z-index: 2;
+    position: relative;
+}
+
+.sectionTwo-text{
+  width: 60%;
+}
+.text-uppercase{
+  font-weight: bold;
+}
+.sectionTwo-text h2{
+  font-size: 78px;
+  line-height: 86px;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  color: #3c4043;
+}
+
+/* Responsive uyum için */
+@media (max-width: 991px) {
+  .sectionTwo-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .green-background {
+    margin-bottom: 2rem;
+  }
+}
+
+

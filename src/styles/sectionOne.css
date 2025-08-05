@@ -1,0 +1,40 @@
+.section-one {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f8f9fa;
+}
+
+.section-text h3 {
+  /* font-weight: 700; */
+  font-size: 88px;
+  line-height: 86px;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  color: #3c4043;
+}
+.section-text h1 {
+  /* font-weight: 700; */
+  font-size: 88px;
+  line-height: 86px;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  color: #3c4043;
+}
+
+.section-text p {
+  font-size: 1.25rem;
+  color: #555;
+  width: "20%";
+}
+
+.section-image {
+  height: "650px";
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.limited-width{
+  max-width:600px;
+  margin: 0 auto;
+}
+
+
