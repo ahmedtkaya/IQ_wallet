@@ -1,27 +1,27 @@
 
- .section-two {
+ .section-four {
   background-color: #1b1b1b;
   /* padding-top: 300px; */
   padding-top:9rem ;
   padding-bottom: 9rem;
 }
 
-.sectionTwo-content {
+.sectionFour-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   /* margin-top: 50px; */
 }
-.orange-mainbackground{
+.green-mainbackground{
   position: relative;
   width: 40%;
   height: 535px;
 }
 
-.orange-background {
+.green-background {
   width: 100%;
   height: 360px;
-    background-color: #ffcfcf;
+    background-color: #7adb6a;
     border-radius: 100px;
     flex-shrink: 0;
     position: absolute;
@@ -30,7 +30,7 @@
     z-index: 0;
 }
 
-.image{
+.sectionFour-image{
     object-fit: contain;
     width: 100%;
     height: 535px;
@@ -38,25 +38,70 @@
     position: relative;
 }
 
-.sectionTwo-text{
+.sectionFour-text{
   width: 60%;
 }
-.sectionTwo-text-muted{
+.sectionFour-text-muted{
   /* font-weight: 500; */
   font-size: 25px;
   font-family: "Google Sans", Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
-.sectionTwo-text h2{
+.sectionFour-text h2{
   font-size: 78px;
   line-height: 86px;
   font-family: "Google Sans", Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
 
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  position: relative;
+  margin-top: 2.5rem;
+  padding-left: 2rem;
+  /* border-left: 2px solid #ccc; */
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-left: -1.9rem;
+  margin-top: 0.2rem;
+}
+
+.hero-icon {
+  width: 30px;
+  height: 30px;
+  color: #000000;
+}
+
+.feature-text {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+  font-family: "Google Sans", Arial, sans-serif;
+  margin-bottom: 0;
+}
+
+
 /* Responsive uyum için */
 @media (max-width: 991px) {
-  .sectionTwo-content {
+  .sectionFour-content {
     flex-direction: column;
     text-align: center;
   }

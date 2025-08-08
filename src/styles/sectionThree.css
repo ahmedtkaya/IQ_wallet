@@ -1,0 +1,102 @@
+.section-three {
+  background-color: #1b1b1b;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  overflow: hidden;
+}
+
+.sectionThree-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.phone-mainbackground {
+  position: relative;
+  width: 300px;
+  height: 535px;
+}
+
+.phone-background {
+  width: 100vw;
+  height: 360px;
+  background-color: #00c9ff;
+  border-radius: 40px 0 0 40px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.sectionThree-image {
+  object-fit: contain;
+  width: 100%;
+  height: 620px;
+  z-index: 2;
+  position: relative;
+}
+
+.sectionThree-text {
+  width: 55%;
+}
+
+.sectionThree-text-muted {
+  font-size: 25px;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.sectionThree-text h2 {
+  font-size: 78px;
+  line-height: 86px;
+  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.text-uppercase {
+  color: #ffffff;
+}
+
+/* 🆕 Eklendi: Animasyonlu kelime yapısı */
+.animated-word-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 120px; /* sabit genişlik - en uzun kelimeye göre ayarlanmalı */
+  min-height: 1em;
+  min-width: 100px;
+}
+
+.animated-word {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: red;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .sectionThree-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .green-background {
+    margin-bottom: 2rem;
+  }
+
+  .sectionThree-text {
+    width: 100%;
+  }
+
+  .sectionThree-text h2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .sectionThree-text-muted {
+    font-size: 20px;
+  }
+}

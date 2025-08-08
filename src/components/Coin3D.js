@@ -4,10 +4,10 @@ import { useGLTF, Environment } from "@react-three/drei";
 
 export default function Coin3D({ scrollY }) {
   return (
-    <div style={{ width: "450px", height: "450px", zIndex: 1 }}>
+    <div style={{ width: "750px", height: "750px", zIndex: 1 }}>
       <Canvas camera={{ position: [0, 0, 10], fov: 50 }}>
         <ambientLight intensity={1.5} />
-        <directionalLight position={[5, 5, 5]} intensity={1.5} />
+        <directionalLight position={[5, 5, 5]} intensity={2.5} />
         <directionalLight position={[-5, -5, -5]} intensity={1.2} />
         <pointLight position={[0, 0, 10]} intensity={1} />
 

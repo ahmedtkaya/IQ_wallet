@@ -6,17 +6,16 @@ import Coin3D from "./Coin3D";
 
 export default function SectionOne() {
   return (
-    <div className="section-one">
+    <div className="section-one" id="sectionOne">
       <Container>
         <div className="section-text text-center">
-          <h3>Bu Bir Wallet Değil.</h3>
-          <h1>Bu Bir IQ Wallet.</h1>
+          <h1>Not Just A Wallet.</h1>
+          <h3>Just IQ Wallet.</h3>
+
           <div className="limited-width">
             <p>
-              Yeni IQ Cüzdan ile nereye giderseniz gidin, her şey tek bir yerde
-              güvende. Ödeme kartlarınız, sadakat kartlarınız, konser
-              biletleriniz ve daha fazlası gibi temel ihtiyaçlarınıza Android
-              veya IOS telefonunuzdan erişin.
+              Wherever you go with new IQ Wallet, everything is secure. Payment
+              cards, entertainment tickets, travel tickets and more
             </p>
           </div>
         </div>

@@ -1,31 +1,69 @@
-/* header{
-  position: fixed;
-  width: 100%;
-} */
-.header-logo {
-  max-height: 40px;
+.modern-header {
+ /* background: #fff; */
+ background-color: rgba(255, 255, 255, 0.3); 
+backdrop-filter: blur(10px);               
+-webkit-backdrop-filter: blur(10px);
+  padding: 1.2rem 0;
+  /* border-bottom: 2px solid #ff6b00; */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.header-top {
-  background-color: black;
-  padding: 20px 0px;
-
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
-.header-bottom {
-  background-color: black;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* alt gölge efekti */
-   z-index: 100;
-  position: relative;
+.modern-logo {
+  height: 40px;
 }
 
-.nav-link {
+.modern-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.modern-nav-link {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #000000;
   font-weight: 500;
-  font-size: 20px !important;
-  transition: color 0.3s ease;
-  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-family: "Google Sans", Arial, sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-bottom: 5px;
+  text-decoration: none;
 }
 
-.nav-link:hover {
-  color: #ddd !important;
+.modern-nav-link:hover {
+  color: #ff6b00;
+  border-bottom: 2px solid #fff;
+}
+
+.modern-nav-link.active {
+  color: #000000;
+  border-bottom: 2px solid white;
+}
+
+/* Responsive - Mobil için dikey hizalama */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modern-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .modern-logo {
+    height: 32px;
+  }
 }
