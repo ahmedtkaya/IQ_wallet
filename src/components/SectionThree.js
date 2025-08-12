@@ -1,11 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Container } from "react-bootstrap";
-import "../styles/sectionThree.css";
-import iphone from "../assets/tickets.png";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import React, { useState, useEffect, useRef } from 'react';
+import { Container } from 'react-bootstrap';
+import '../styles/sectionThree.css';
+import iphone from '../assets/tickets.png';
+import { AnimatePresence, motion, useInView } from 'framer-motion';
 
 export default function SectionThree() {
-  const words = ["event", "sports", "concert"];
+  const words = ['event', 'sports', 'concert'];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visible, setVisible] = useState(true);
   const phoneRef = useRef(null);
@@ -34,12 +34,12 @@ export default function SectionThree() {
               className="fw-bold mb-3"
               aria-label="Now your phone is your ticket to the theme park"
             >
-              Now your phone is your ticket to the{" "}
+              Now your phone is your ticket to the{' '}
               <AnimatePresence mode="wait">
                 {visible && (
                   <motion.span
                     key={words[currentIndex]}
-                    style={{ color: "red", display: "inline-block" }}
+                    style={{ color: 'red', display: 'inline-block' }}
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
@@ -51,9 +51,9 @@ export default function SectionThree() {
               </AnimatePresence>
             </h2>
             <p className="sectionThree-text-muted">
-              Carry everything you need to see a show or cheer on your favorite
-              team. Google Wallet will even surface your ticket on the day of
-              the event, so you won't miss the opening act or first quarter.
+              Carry everything you need to see a show or cheer on your favorite team. IQ Wallet will
+              even surface your ticket on the day of the event, so you won't miss the opening act or
+              first quarter.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ export default function SectionThree() {
             className="phone-mainbackground me-lg-5 mb-4 mb-lg-0"
             initial={{ x: 200, opacity: 0 }}
             animate={isInView ? { x: 0, opacity: 1 } : {}}
-            transition={{ duration: 0.8, ease: "easeOut" }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
           >
             <div className="phone-background"></div>
             <img src={iphone} className="sectionThree-image" alt="iPhone" />

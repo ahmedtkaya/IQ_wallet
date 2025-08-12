@@ -43,14 +43,14 @@
 
 .sectionThree-text-muted {
   font-size: 25px;
-  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
 
 .sectionThree-text h2 {
   font-size: 78px;
   line-height: 86px;
-  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
 
@@ -98,5 +98,33 @@
 
   .sectionThree-text-muted {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .section-three {
+    background-color: #1b1b1b;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+  }
+  .section-three .container .sectionThree-content {
+    flex-direction: column-reverse !important;
+  }
+  .phone-background {
+    height: 366px;
+  }
+  .phone-mainbackground {
+    height: 366px;
+  }
+  .sectionThree-image {
+    height: 366px;
+  }
+  .sectionThree-text h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .sectionThree-text-muted {
+    font-size: 1rem;
   }
 }

@@ -1,8 +1,7 @@
-
- .section-four {
+.section-four {
   background-color: #1b1b1b;
   /* padding-top: 300px; */
-  padding-top:9rem ;
+  padding-top: 9rem;
   padding-bottom: 9rem;
 }
 
@@ -12,7 +11,7 @@
   justify-content: space-between;
   /* margin-top: 50px; */
 }
-.green-mainbackground{
+.green-mainbackground {
   position: relative;
   width: 40%;
   height: 535px;
@@ -21,36 +20,36 @@
 .green-background {
   width: 100%;
   height: 360px;
-    background-color: #7adb6a;
-    border-radius: 100px;
-    flex-shrink: 0;
-    position: absolute;
-    bottom: 0;
-    left: -50;
-    z-index: 0;
+  background-color: #7adb6a;
+  border-radius: 100px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  left: -50;
+  z-index: 0;
 }
 
-.sectionFour-image{
-    object-fit: contain;
-    width: 100%;
-    height: 535px;
-    z-index: 2;
-    position: relative;
+.sectionFour-image {
+  object-fit: contain;
+  width: 100%;
+  height: 535px;
+  z-index: 2;
+  position: relative;
 }
 
-.sectionFour-text{
+.sectionFour-text {
   width: 60%;
 }
-.sectionFour-text-muted{
+.sectionFour-text-muted {
   /* font-weight: 500; */
   font-size: 25px;
-  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
-.sectionFour-text h2{
+.sectionFour-text h2 {
   font-size: 78px;
   line-height: 86px;
-  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
 
@@ -66,7 +65,7 @@
 
 .feature-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   position: relative;
 }
@@ -94,10 +93,9 @@
   font-size: 18px;
   color: #fff;
   line-height: 1.5;
-  font-family: "Google Sans", Arial, sans-serif;
+  font-family: 'Google Sans', Arial, sans-serif;
   margin-bottom: 0;
 }
-
 
 /* Responsive uyum için */
 @media (max-width: 991px) {
@@ -111,4 +109,42 @@
   }
 }
 
-
+@media (max-width: 768.98px) {
+  .section-four {
+    background-color: #1b1b1b;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .green-mainbackground {
+    position: relative;
+    width: 100%;
+    height: 366px;
+  }
+  .green-mainbackground {
+    position: relative;
+    width: 100%;
+    height: 366px;
+  }
+  .green-background {
+    height: 366px;
+  }
+  .sectionFour-image {
+    height: 366px;
+  }
+  .green-background {
+    margin-bottom: 0px !important;
+  }
+  .sectionFour-text {
+    width: 100%;
+  }
+  .sectionFour-text h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .sectionFour-text-muted {
+    font-size: 1rem;
+  }
+  .feature-text {
+    font-size: 14px;
+  }
+}

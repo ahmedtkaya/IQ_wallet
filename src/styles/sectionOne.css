@@ -8,33 +8,54 @@
   font-weight: 700;
   font-size: 88px;
   line-height: 86px;
-  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
 .section-text h1 {
   font-weight: 700;
   font-size: 55px;
   line-height: 46px;
-  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
 
 .section-text p {
   font-size: 1.25rem;
   color: #ffffff;
-  width: "20%";
+  width: '20%';
 }
 
 .section-image {
-  height: "650px";
+  height: '650px';
   overflow: visible;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.limited-width{
-  max-width:600px;
+.limited-width {
+  max-width: 600px;
   margin: 0 auto;
 }
 
-
+@media (max-width: 768.98px) {
+  .modern-nav {
+    display: none;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  .section-text h1 {
+    font-size: 32px;
+  }
+  .section-text h3 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .section-text p {
+    font-size: 1rem;
+  }
+  .section-one {
+    padding-bottom: 0px;
+  }
+}

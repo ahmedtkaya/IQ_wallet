@@ -1,8 +1,8 @@
 .modern-header {
- /* background: #fff; */
- background-color: rgba(255, 255, 255, 0.3); 
-backdrop-filter: blur(10px);               
--webkit-backdrop-filter: blur(10px);
+  /* background: #fff; */
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 1.2rem 0;
   /* border-bottom: 2px solid #ff6b00; */
   position: sticky;
@@ -32,7 +32,7 @@ backdrop-filter: blur(10px);
   font-size: 1.2rem;
   color: #000000;
   font-weight: 500;
-  font-family: "Google Sans", Arial, sans-serif;
+  font-family: 'Google Sans', Arial, sans-serif;
   cursor: pointer;
   transition: all 0.3s ease;
   padding-bottom: 5px;
@@ -64,6 +64,6 @@ backdrop-filter: blur(10px);
   }
 
   .modern-logo {
-    height: 32px;
+    height: 40px;
   }
 }

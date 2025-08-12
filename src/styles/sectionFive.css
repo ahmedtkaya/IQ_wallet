@@ -1,8 +1,7 @@
-
- .section-five {
+.section-five {
   background-color: #1b1b1b;
   /* padding-top: 300px; */
-  padding-top:9rem ;
+  padding-top: 9rem;
   padding-bottom: 9rem;
   overflow: hidden;
 }
@@ -13,7 +12,7 @@
   justify-content: space-between;
   /* margin-top: 50px; */
 }
-.white-mainbackground{
+.white-mainbackground {
   position: relative;
   width: 300px; /* 40% idi*/
   height: 535px;
@@ -21,37 +20,37 @@
 
 .white-background {
   width: 100vw;
-    height: 360px;
-    background-color: #adadad;
-    border-radius: 40px 0 0 40px;
-    flex-shrink: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
+  height: 360px;
+  background-color: #adadad;
+  border-radius: 40px 0 0 40px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
 }
 
-.sectionFive-image{
-    object-fit: contain;
-    width: 100%;
-    height: 617px;
-    z-index: 2;
-    position: relative;
+.sectionFive-image {
+  object-fit: contain;
+  width: 100%;
+  height: 617px;
+  z-index: 2;
+  position: relative;
 }
 
-.sectionFive-text{
+.sectionFive-text {
   width: 60%;
 }
-.sectionFive-text-muted{
+.sectionFive-text-muted {
   /* font-weight: 500; */
   font-size: 25px;
-  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
-.sectionFive-text h2{
+.sectionFive-text h2 {
   font-size: 78px;
   line-height: 86px;
-  font-family: "Google Sans", Arial, Helvetica, sans-serif;
+  font-family: 'Google Sans', Arial, Helvetica, sans-serif;
   color: #ffffff;
 }
 
@@ -67,7 +66,7 @@
 
 .feature-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 1rem;
   position: relative;
 }
@@ -95,10 +94,9 @@
   font-size: 18px;
   color: #fff;
   line-height: 1.5;
-  font-family: "Google Sans", Arial, sans-serif;
+  font-family: 'Google Sans', Arial, sans-serif;
   margin-bottom: 0;
 }
-
 
 /* Responsive uyum için */
 @media (max-width: 991px) {
@@ -112,4 +110,35 @@
   }
 }
 
-
+@media (max-width: 768.98px) {
+  .section-five {
+    background-color: #1b1b1b;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .section-five .sectionFive-content {
+    flex-direction: column-reverse !important;
+  }
+  .sectionFive-image {
+    height: 366px;
+  }
+  .white-background {
+    height: 366px;
+  }
+  .white-mainbackground {
+    height: 366px;
+  }
+  .sectionFive-text {
+    width: 100%;
+  }
+  .sectionFive-text h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+  .sectionFive-text-muted {
+    font-size: 1rem;
+  }
+  .feature-text {
+    font-size: 14px;
+  }
+}
